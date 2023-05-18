@@ -1,0 +1,83 @@
+ 
+    /* Styles CSS pour le menu et la barre de recherche */
+    
+    /* Styles généraux */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .barre{
+      justify-content: space-between;
+      border: 1px solid #008080;
+      width: 100%;
+      height: 90px;
+      background-color: #008080;
+    }
+    
+    /* Styles du menu */
+    .menu {
+      display: flex;
+      align-items: center;
+    }
+    
+    .menu-item {
+      position: relative;
+      margin-right: 20px;
+    }
+    
+    .menu-item:hover .dropdown-menu {
+      display: block;
+    }
+    
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #f9f9f9;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 10px;
+    }
+    
+    /* Styles de la flèche */
+    .dropdown-menu::before {
+      content: '';
+      position: absolute;
+      /* width: 100%; */
+      border-radius: 50px;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent transparent #f9f9f9 transparent;
+    }
+    
+    /* Styles de la barre de recherche */
+    .search-bar {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+    
+    .search-input {
+      /* <div class="search-bar">
+            
+            <input type="text" class="search-input" placeholder="Rechercher...">
+          
+            <button class="search-button">Rechercher</button>
+        
+      </div> */
+      padding: 5px;
+      width: 200px;
+    }
+    ul li{
+        list-style: none;
+    }
+    
+    .search-button {
+      margin-left: 10px;
+      padding: 5px 10px;
+      background-color: #f9f9f9;
+      border: none;
+      cursor: pointer;
+    }
